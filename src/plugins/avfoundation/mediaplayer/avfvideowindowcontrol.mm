@@ -200,7 +200,7 @@ void AVFVideoWindowControl::setLayer(void *playerLayer)
 
     m_playerLayer = layer;
 
-    CALayer *nativeLayer = [m_nativeView layer];
+    CALayer *nativeLayer = (CALayer *) [m_nativeView layer];
 
     if (layer) {
         [layer retain];
